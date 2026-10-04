@@ -33,7 +33,7 @@ export default {
     };
   },
   created() {
-    let apiURL = `http://localhost:4000/api/edit-student/${this.$route.params.id}`;
+    let apiURL = `https://final-mevn-backend.vercel.app/api/edit-student/${this.$route.params.id}`;
     axios.get(apiURL).then((res) => {
       this.student = res.data;
     }).catch(error => console.log(error));

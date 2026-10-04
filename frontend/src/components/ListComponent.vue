@@ -36,7 +36,7 @@ export default {
     };
   },
   created() {
-    let apiURL = 'http://localhost:4000/api';
+    let apiURL = 'https://final-mevn-backend.vercel.app/api';
     axios.get(apiURL).then(res => {
       this.Students = res.data;
     }).catch(error => console.log(error));
